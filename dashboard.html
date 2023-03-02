@@ -27,8 +27,20 @@
                 <input type="text" id="search-form" placeholder="Search here...">
             </div>
 
+            <div>
+                <p style="margin: 0px 10px; display:inline-block;">I am looking to... </p>
+                <div class="btn-container">
+                    <label class="switch btn-color-mode-switch">
+                        <input type="checkbox" name="color_mode" id="color_mode" value="1">
+                        <label for="color_mode" data-on="Sell" data-off="Buy" class="btn-color-mode-switch-inner"></label>
+                    </label>
+              </div>
+              <button class="reset-btn" onclick="resetFilter()">Reset</button>
+            </div>
+
             <div class="search-results" id="search-results">
-                <a href="item.html" class="result-item">
+                <a href="item.html" class="result-item selling-item">
+                    <p class="tag">For sale...</p>
                     <img src="hangers.png" alt="">
                     <div class="description">
                         <h2>$20</h2>
@@ -37,7 +49,18 @@
                     </div>
                 </a>
 
-                <div class="result-item">
+                <div class="result-item buying-item">
+                    <p class="tag-2">Offer to Buy...</p>
+                    <img src="lamp.png" alt="">
+                    <div class="description">
+                        <h2>~ $10</h2>
+                        <p>Table Lamp</p>
+                        <span>Furniture</span>
+                    </div>
+                </div>
+
+                <div class="result-item selling-item">
+                    <p class="tag">For sale...</p>
                     <img src="heater.png" alt="">
                     <div class="description">
                         <h2>$20</h2>
@@ -46,7 +69,8 @@
                     </div>
                 </div>
 
-                <div class="result-item">
+                <div class="result-item selling-item">
+                    <p class="tag">For sale...</p>
                     <img src="textbook.png" alt="">
                     <div class="description">
                         <h2>$20</h2>
@@ -55,7 +79,8 @@
                     </div>
                 </div>
 
-                <div class="result-item">
+                <div class="result-item selling-item">
+                    <p class="tag">For sale...</p>
                     <img src="table.png" alt="">
                     <div class="description">
                         <h2>$20</h2>
@@ -64,6 +89,25 @@
                     </div>
                 </div>
 
+                <div class="result-item buying-item">
+                    <p class="tag-2">Offer to Buy...</p>
+                    <img src="fridge.png" alt="">
+                    <div class="description">
+                        <h2>~ $50</h2>
+                        <p>Mini Refrigerator</p>
+                        <span>Appliance</span>
+                    </div>
+                </div>
+
+                <div class="result-item buying-item">
+                    <p class="tag-2">Offer to Buy...</p>
+                    <img src="tv.png" alt="">
+                    <div class="description">
+                        <h2>~ $100</h2>
+                        <p>Roku Television</p>
+                        <span>Electronic</span>
+                    </div>
+                </div>
             </div>
 
         </div>
