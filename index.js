@@ -17,7 +17,7 @@ searchForm.addEventListener("keyup", function() {
     for (var i=0; i <searchValue.length; i++) {
         console.log(searchForm.value);
 
-        let value = searchResultList[i].getElementsByTagName('p')[0];
+        let value = searchResultList[i].getElementsByTagName('p')[1];
 
         let filterValue = value.textContent || value.innerHTML;
 
