@@ -32,9 +32,9 @@ searchForm.addEventListener("keyup", function() {
 
 checkbox.addEventListener('change', (event) => {
     if (event.currentTarget.checked) {
-        setToBuy();
-    } else {
         setToSell();
+    } else {
+        setToBuy();
     }
 })
 
@@ -48,7 +48,7 @@ function resetFilter() {
 
 
 
-function setToSell() {
+function setToBuy() {
     var s_item = document.getElementsByClassName("selling-item");
     for (var i = 0; i < s_item.length; i++) {
        s_item[i].style.display = "";
@@ -61,7 +61,7 @@ function setToSell() {
 }
 
 
-function setToBuy() {
+function setToSell() {
     var s_item = document.getElementsByClassName("selling-item");
     for (var i = 0; i < s_item.length; i++) {
        s_item[i].style.display = "none";

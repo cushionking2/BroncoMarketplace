@@ -21,7 +21,7 @@
         <a href="#" onClick="filterAppliances()">Appliances</a>
     </div>
 
-    <body>
+    <body onload="setToBuy()">
 
         <div class="main-container">
 
@@ -42,8 +42,10 @@
                         <input type="checkbox" name="color_mode" id="color_mode" value="1">
                         <label for="color_mode" data-on="Sell" data-off="Buy" class="btn-color-mode-switch-inner"></label>
                     </label>
-              </div>
-              <button class="reset-btn" onclick="resetFilter()">Reset</button>
+                </div>
+                <div class="btn-container">
+                    <button class="reset-btn" onclick="resetFilter()">Reset</button>
+                </div>
             </div>
 
             <div class="search-results" id="search-results">
