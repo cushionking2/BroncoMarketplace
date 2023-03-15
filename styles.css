@@ -150,11 +150,13 @@ html {
 }
 
 .result-item .description h2 {
+    font-size: 15px;
     color: #FFF;
 }
 
 .result-item .description p {
     font-size: 17px; 
+    font-weight: bold;
     color: #FFF;
     line-height: 25px;
 }
@@ -166,13 +168,14 @@ html {
 }
 
 .back-button {
+    text-align: center;
     text-decoration: none;
     color: #FFF;
     font-size: 15px;
     background-color: rgba(217, 217, 217, 0.5);
     padding: 10px;
     border-radius: 10px;
-    
+    width: 50px;
 }
 
 .back-button:hover {
@@ -185,7 +188,10 @@ html {
 
 
 
-
+.item-name {
+    text-align: center;
+    font-size: 25px;
+}
 
 .slider {
     width: 400px;
@@ -236,7 +242,9 @@ html {
     background-color: lightgreen;
 }
 
-
+.item-description-container {
+    
+}
 
 
 
@@ -268,6 +276,7 @@ label {
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner{
+    cursor: pointer;
     margin: 0px;
     width: 140px;
     height: 30px;
@@ -334,6 +343,8 @@ label {
 .tag {
     margin-top: 0;
     margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
     background-color: #B30738;
     padding: 3px 15px;
     border-radius: 10px;
@@ -343,6 +354,8 @@ label {
 .tag-2 {
     margin-top: 0;
     margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
     background-color: #0d669e;
     padding: 3px 15px;
     border-radius: 10px;
@@ -352,13 +365,16 @@ label {
 .reset-btn {
     background-color: #2b882e; /* Green */
     border: none;
+    border-radius: 10px;
     color: white;
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
+    font-weight: bold;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 
