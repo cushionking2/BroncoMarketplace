@@ -27,9 +27,40 @@
         <div class="main-container">
 
             <div style="display: flex; width: auto; align-items: center; justify-content: space-between;">
-                <h1 style="font-size: 40px; font-weight: bold;">Bronco Marketplace</h1>
+                <h1 style="font-size: 40px; font-weight: bold;">Create Your Own Listing</h1>
                 <a href="https://google.com" class="login-button">Login</a>
             </div>
+
+            <div class="create-listing-container">
+                <form action="/">
+                  <h4>Title<span>*</span></h4>
+                  <input type="text" name="name" />
+                  <h4>Price<span>*</span></h4>
+                  <input type="text" name="name"/>
+                  <h4>Category<span>*</span></h4>
+                  <select>
+                    <option value=""></option>
+                    <option value="1">Appliances</option>
+                    <option value="1">Clothing</option>
+                    <option value="2">Electronics</option>
+                    <option value="3">Furniture</option>
+                  </select>
+                  <h4>Item Condition</h4>
+                  <select>
+                    <option value=""></option>
+                    <option value="1">New</option>
+                    <option value="1">Used - Like New</option>
+                    <option value="2">Used - Good</option>
+                    <option value="3">Used - Fair</option>
+                    <option value="3">Used - Poor</option>
+                  </select>
+                  <h4>Images of Item(0/5)</h4>
+                  <button>Upload Images Here</button>
+                  <div class="btn-block">
+                    <button type="submit" href="/">Submit Listing</button>
+                  </div>
+                </form>
+              </div>
         </div>
 
         <script src="index.js"></script>
