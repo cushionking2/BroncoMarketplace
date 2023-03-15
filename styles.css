@@ -45,7 +45,6 @@ html {
 
 
 .sidebar hr {
-    margin-top: 12vh;
     border: 1px solid black;
 }
 
@@ -58,7 +57,13 @@ html {
     margin-right: auto;
 }
 
-
+.create-listing-btn {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8vh;
+    color: rgb(226, 218, 218);
+    background-color: #B30738;
+}
 
 
 .main-container {
@@ -240,10 +245,6 @@ html {
     width: 15px;
     border-radius: 50px;
     background-color: lightgreen;
-}
-
-.item-description-container {
-    
 }
 
 
