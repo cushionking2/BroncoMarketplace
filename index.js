@@ -13,42 +13,27 @@ let searchValue=result.getElementsByTagName("p");
 const checkbox = document.getElementById('color_mode')
 
 
-document.querySelectorAll('.result-item.buying-item, .result-item.selling-item').forEach(function(card) {
-    card.addEventListener('click', function(event) {
-      const cardUrl = event.currentTarget.dataset.cardUrl;
-      window.location.href = cardUrl;
-    });
-  });
-
-document.querySelectorAll('.custom-bookmark').forEach(function(bookmarkIcon) {
-    bookmarkIcon.addEventListener('click', function(event) {
-      event.stopPropagation();
-      if (event.target.classList.contains('bx-bookmark')) {
-        event.target.classList.remove('bx-bookmark');
-        event.target.classList.add('bx-bookmark-alt');
-        event.target.style.color = 'yellow';
-      } else {
-        event.target.classList.remove('bx-bookmark-alt');
-        event.target.classList.add('bx-bookmark');
-        event.target.style.color = '';
-      }
-    });
-  });
-
 searchForm.addEventListener("keyup", function() {
-    for (var i=0; i <searchValue.length; i++) {
-        console.log(searchForm.value);
-
-        let value = searchResultList[i].getElementsByTagName('p')[1];
-
-        let filterValue = value.textContent || value.innerHTML;
-
-        if (filterValue.toUpperCase().indexOf(searchForm.value.toUpperCase()) > -1) {
-            searchResultList[i].style.display = "";
+    if (searchForm.value.length === 0){
+        if (document.getElementById('color_mode').checked) {
+            setToSell();
         } else {
-            searchResultList[i].style.display = "none";
+            setToBuy();
         }
+    } else {
+        for (var i=0; i <searchValue.length; i++) {
+            console.log(searchForm.value);
 
+            let value = searchResultList[i].getElementsByTagName('p')[1];
+
+            let filterValue = value.textContent || value.innerHTML;
+
+            if (filterValue.toUpperCase().indexOf(searchForm.value.toUpperCase()) > -1) {
+                searchResultList[i].style.display = "";
+            } else {
+                searchResultList[i].style.display = "none";
+            }
+        }
     }
 })
 
