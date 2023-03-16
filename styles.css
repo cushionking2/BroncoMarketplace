@@ -723,3 +723,13 @@ input[type="submit"] {
     background-color: rgba(0, 0, 0, 0.3);
     color: #FFF;
     border: none;
+}
+
+.left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
