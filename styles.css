@@ -358,6 +358,6 @@ label {
     border: none;
 }
 
-button.bookmarked {
+.yellow-bookmark {
     color: yellow;
 }

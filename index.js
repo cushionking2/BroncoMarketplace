@@ -12,18 +12,27 @@ let result = document.getElementById('search-results');
 let searchValue=result.getElementsByTagName("p");
 const checkbox = document.getElementById('color_mode')
 
-document.addEventListener('DOMContentLoaded', () => {
-    const bookmarkButton = document.querySelector('.bookmark-btn');
-    
-    if (bookmarkButton) {
-      bookmarkButton.addEventListener('click', (event) => {
-        event.stopPropagation();
-        const bookmarkIcon = event.target.closest('.bx');
-        bookmarkIcon.classList.toggle('bookmarked');
-      });
-    }
+document.querySelectorAll('.result-item.buying-item, .result-item.selling-item').forEach(function(card) {
+    card.addEventListener('click', function(event) {
+      const cardUrl = event.currentTarget.dataset.cardUrl;
+      window.location.href = cardUrl;
+    });
   });
-  
+
+document.querySelectorAll('.custom-bookmark').forEach(function(bookmarkIcon) {
+    bookmarkIcon.addEventListener('click', function(event) {
+      event.stopPropagation();
+      if (event.target.classList.contains('bx-bookmark')) {
+        event.target.classList.remove('bx-bookmark');
+        event.target.classList.add('bx-bookmark-alt');
+        event.target.style.color = 'yellow';
+      } else {
+        event.target.classList.remove('bx-bookmark-alt');
+        event.target.classList.add('bx-bookmark');
+        event.target.style.color = '';
+      }
+    });
+  });
 
 searchForm.addEventListener("keyup", function() {
     for (var i=0; i <searchValue.length; i++) {
