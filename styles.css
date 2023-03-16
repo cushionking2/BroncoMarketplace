@@ -245,6 +245,7 @@ html {
 
 .result-item .description {
     line-height: 20px;
+    position: relative;
 }
 
 .result-item .description h2 {
@@ -723,3 +724,4 @@ input[type="submit"] {
     background-color: rgba(0, 0, 0, 0.3);
     color: #FFF;
     border: none;
+}
