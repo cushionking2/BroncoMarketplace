@@ -248,7 +248,11 @@ html {
 }
 
 .item-description-container {
-    padding: 40px 100px;
+    padding: 40px 200px;
+}
+
+.item-description-container p {
+    width: 500px;
 }
 
 .item-description-container a {
