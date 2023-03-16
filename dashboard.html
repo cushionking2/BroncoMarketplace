@@ -10,12 +10,14 @@
     </head>
 
     <div class="sidebar">
-        <a href="#">Browse All</a>
+        <img src="logo.png" alt="" class="logo">
+        <a href="dashboard.html">Browse All</a>
         <a href="inbox.html">Inbox</a>
-        <!-- <a href="#">Notifications</a> -->
         <a href="bookmarks.html">Bookmarks</a>
-
-        <a href="#" style="text-decoration: underline; margin-top: 20vh;">Categories</a>
+        
+        <a href="createlisting.html" class="create-listing-btn">+ Create a New Listing</a>
+        <hr>
+        <h1 style="font-size: 28px; font-weight: bold;">Categories</h1>
         <a href="#" onClick="filterFurniture()">Furniture</a>
         <a href="#" onClick="filterElectronics()">Electronics</a>
         <a href="#" onClick="filterAppliances()">Appliances</a>
@@ -49,7 +51,7 @@
             </div>
 
             <div class="search-results" id="search-results">
-                <div class="result-item selling-item" data-card-url="item.html">
+                <a href="item.html" class="result-item selling-item">
                     <p class="tag">For sale...</p>
                     <img src="hangers.png" alt="">
                     <div class="description">
@@ -58,10 +60,10 @@
                         <p>Clothes Hangers</p>
                         <span>Clothing</span>
                     </div>
-                </div>
+                </a>
 
                 <div class="result-item buying-item">
-                    <p class="tag-2">Offer to Buy...</p>
+                    <p class="tag-2">Looking for...</p>
                     <img src="lamp.png" alt="">
                     <div class="description">
                         <h2>~ $10</h2>
@@ -99,23 +101,65 @@
                     <div class="description">
                         <h2>$20</h2>
                         <button class="bookmark-btn" style="font-size: 20px;"><i class="bx bx-bookmark custom-bookmark" id="bookmark"></i></button>
+                        <p>Wooden Chair</p>
+                        <span>Furniture</span>
+                    </div>
+                </div>
+
+                <div class="result-item selling-item">
+                    <p class="tag">For sale...</p>
+                    <img src="table.png" alt="">
+                    <div class="description">
+                        <h2>$20</h2>
+                        <button class="bookmark-btn" style="font-size: 20px;"><i class="bx bx-bookmark custom-bookmark" id="bookmark"></i></button>
                         <p>Bedside Table</p>
-                        <span>Textbook</span>
+                        <span>Furniture</span>
+                    </div>
+                </div>
+                <div class="result-item selling-item">
+                    <p class="tag">For sale...</p>
+                    <img src="chromebook.jpg" alt="">
+                    <div class="description">
+                        <h2>$20</h2>
+                        <button class="bookmark-btn" style="font-size: 20px;"><i class="bx bx-bookmark custom-bookmark" id="bookmark"></i></button>
+                        <p>Chromebook</p>
+                        <span>Electronics</span>
+                    </div>
+                </div>
+                <div class="result-item selling-item">
+                    <p class="tag">For sale...</p>
+                    <img src="electricscooter.jpg" alt="">
+                    <div class="description">
+                        <h2>$20</h2>
+                        <button class="bookmark-btn" style="font-size: 20px;"><i class="bx bx-bookmark custom-bookmark" id="bookmark"></i></button>
+                        <p>Electric Scooter</p>
+                        <span>Electronics</span>
+                    </div>
+                </div>
+                <div class="result-item selling-item">
+                    <p class="tag">For sale...</p>
+                    <img src="phonecharger.jpg" alt="">
+                    <div class="description">
+                        <h2>$20</h2>
+                        <button class="bookmark-btn" style="font-size: 20px;"><i class="bx bx-bookmark custom-bookmark" id="bookmark"></i></button>
+                        <p>Powerbank Charger</p>
+                        <span>Electronics</span>
                     </div>
                 </div>
 
                 <div class="result-item buying-item">
-                    <p class="tag-2">Offer to Buy...</p>
+                    <p class="tag-2">Looking for...</p>
                     <img src="fridge.png" alt="">
                     <div class="description">
-                        <h2>Price N/A</h2>
+                        <h2>~ $80</h2>
+                        <button class="bookmark-btn" style="font-size: 20px;"><i class="bx bx-bookmark custom-bookmark" id="bookmark"></i></button>
                         <p>Mini Refrigerator</p>
                         <span>Appliance</span>
                     </div>
                 </div>
 
                 <div class="result-item buying-item">
-                    <p class="tag-2">Offer to Buy...</p>
+                    <p class="tag-2">Looking for...</p>
                     <img src="tv.png" alt="">
                     <div class="description">
                         <h2>~ $100</h2>
