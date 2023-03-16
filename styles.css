@@ -12,6 +12,99 @@ html {
     overflow: scroll;
 }
 
+
+
+
+
+
+
+
+
+
+
+.login-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.login-form-field {
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#login-form-submit {
+    width: 50px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+    width: 50%;
+
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(179,7,56,1) 0%, #000  100%);
+    transition: 0.5s;
+    background-size: 200%;
+    color: white;
+}
+
+#login-form-submit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.redirect-button {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0px; 
+    font-size: 20px;       
+}
+
+
+.redirect-button:hover {
+    color: rgba(179,7,56,1);
+    text-decoration: none;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sidebar {
     width: 300px;
     height: 100%;
@@ -383,3 +476,91 @@ label {
     right: 10px;
   }
   
+
+
+
+.inbox-container {
+    display: flex;
+    margin: 0px;
+    padding: 30px 80px;
+    width: 85%;
+    color: white;
+    background: #800000;
+    border-radius: 10px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+.message-form-container {
+    width: 90%;
+}
+
+
+
+
+.message-form-container input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 70%;
+    height: 30px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.message-form-container select {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 70%;
+    height: 40px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.message-form-container textarea {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 70%;
+    height: 30px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    resize: none;
+}
+
+.message-form-container input[type="submit"] {
+    background-color: #B30738;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+}
