@@ -12,6 +12,27 @@ let result = document.getElementById('search-results');
 let searchValue=result.getElementsByTagName("p");
 const checkbox = document.getElementById('color_mode')
 
+document.querySelectorAll('.result-item.buying-item, .result-item.selling-item').forEach(function(card) {
+    card.addEventListener('click', function(event) {
+      const cardUrl = event.currentTarget.dataset.cardUrl;
+      window.location.href = cardUrl;
+    });
+  });
+
+document.querySelectorAll('.custom-bookmark').forEach(function(bookmarkIcon) {
+    bookmarkIcon.addEventListener('click', function(event) {
+      event.stopPropagation();
+      if (event.target.classList.contains('bx-bookmark')) {
+        event.target.classList.remove('bx-bookmark');
+        event.target.classList.add('bx-bookmark-alt');
+        event.target.style.color = 'yellow';
+      } else {
+        event.target.classList.remove('bx-bookmark-alt');
+        event.target.classList.add('bx-bookmark');
+        event.target.style.color = '';
+      }
+    });
+  });
 
 searchForm.addEventListener("keyup", function() {
     if (searchForm.value.length === 0){
