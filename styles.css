@@ -406,8 +406,8 @@ label {
     margin: 0px;
     padding: 30px 80px;
     width: 85%;
-    color: black;
-    background: white;
+    color: white;
+    background: #80092b;
     border-radius: 10px;
     box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
@@ -485,14 +485,7 @@ label {
 }
 
 input[type="submit"] {
-    background-color: rgb(84, 105, 212);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
-                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
-                rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
-                rgb(84, 105, 212) 0px 0px 0px 1px, 
-                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
-                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
-                rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+    background-color: #B30738;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
@@ -502,7 +495,7 @@ input[type="submit"] {
 }
 
 .listing-result .result-item {
-    height: 500px;
+    height: 480px;
     width: 300px;
 }
 
@@ -514,4 +507,17 @@ input[type="submit"] {
 .listing-result .result-item .description{
     height: 300px;
     width: 300px;
+}
+
+.listing-result .result-item .description h2 {
+    font-size: 20px;
+}
+
+.listing-result .result-item .description p {
+    font-size: 24px; 
+}
+
+.result-item .description span {
+    font-size: 16px; 
+    color: #c6c6c6;
 }
