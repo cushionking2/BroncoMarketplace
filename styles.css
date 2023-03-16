@@ -407,7 +407,7 @@ label {
     padding: 30px 80px;
     width: 85%;
     color: white;
-    background: #80092b;
+    background: #800000;
     border-radius: 10px;
     box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
@@ -497,6 +497,7 @@ input[type="submit"] {
 .listing-result .result-item {
     height: 480px;
     width: 300px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
 
 .listing-result .result-item img{
