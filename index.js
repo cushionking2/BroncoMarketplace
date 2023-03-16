@@ -12,6 +12,7 @@ let result = document.getElementById('search-results');
 let searchValue=result.getElementsByTagName("p");
 const checkbox = document.getElementById('color_mode')
 
+
 document.querySelectorAll('.result-item.buying-item, .result-item.selling-item').forEach(function(card) {
     card.addEventListener('click', function(event) {
       const cardUrl = event.currentTarget.dataset.cardUrl;
