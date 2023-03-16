@@ -32,14 +32,26 @@
             </div>
 
             <div class="create-listing-container">
+              <div class="listing-form-container">
                 <form action="/">
-                  <h4>Title<span>*</span></h4>
-                  <input type="text" name="name" />
-                  <h4>Price<span>*</span></h4>
-                  <input type="text" name="name"/>
-                  <h4>Category<span>*</span></h4>
+                  <h4>Type of Listing<span>*</span></h4>
                   <select>
                     <option value=""></option>
+                    <option value="1">Owner - Selling item</option>
+                    <option value="2">Purchaser - Buying item</option>
+                  </select>
+                  <h4>Item Name<span>*</span></h4>
+                  <input type="text" name="name" placeholder="Item name..."/>
+                  <h4>Price<span>*</span></h4>
+                  $
+                  <input type="text" name="name" style="width: 60px;"/>
+                  .
+                  <input type="text" name="name" style="width: 40px;"/>
+                  <h4>Description<span>*</span></h4>
+                  <textarea type="text" name="name" style="height: 200px;" placeholder="Write a short description..."></textarea>
+                  <h4>Category<span>*</span></h4>
+                  <select>
+                    <option value="" disabled selected>Choose a category...</option>
                     <option value="1">Appliances</option>
                     <option value="1">Clothing</option>
                     <option value="2">Electronics</option>
@@ -47,20 +59,35 @@
                   </select>
                   <h4>Item Condition</h4>
                   <select>
-                    <option value=""></option>
+                    <option value="" disabled selected>Choose the item condition...</option>
                     <option value="1">New</option>
                     <option value="1">Used - Like New</option>
                     <option value="2">Used - Good</option>
                     <option value="3">Used - Fair</option>
                     <option value="3">Used - Poor</option>
                   </select>
-                  <h4>Images of Item(0/5)</h4>
+                  <h4>Image(s) of Item<span> (1 Required)*</span> (0/5)</h4>
                   <input type="file" id="myFile" name="filename">
                   <div class="btn-block">
-                    <button type="submit" href="/">Submit Listing</button>
+                    <input type="submit" name="submit" value="Submit Listing">
                   </div>
                 </form>
               </div>
+
+              <div class="listing-result">
+                <h1>Preview</h1>
+                <div class="result-item">
+                    <p class="tag">For sale...</p>
+                    <img src="hangers.png" alt="">
+                    <div class="description">
+                        <h2>$20</h2>
+                        <p>Clothes Hangers</p>
+                        <span>Clothing</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+
         </div>
 
         <script src="index.js"></script>
