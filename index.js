@@ -12,6 +12,18 @@ let result = document.getElementById('search-results');
 let searchValue=result.getElementsByTagName("p");
 const checkbox = document.getElementById('color_mode')
 
+document.addEventListener('DOMContentLoaded', () => {
+    const bookmarkButton = document.querySelector('.bookmark-btn');
+    
+    if (bookmarkButton) {
+      bookmarkButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const bookmarkIcon = event.target.closest('.bx');
+        bookmarkIcon.classList.toggle('bookmarked');
+      });
+    }
+  });
+  
 
 searchForm.addEventListener("keyup", function() {
     for (var i=0; i <searchValue.length; i++) {

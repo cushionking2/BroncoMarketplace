@@ -98,21 +98,16 @@ html {
 }
 
 .result-item {
+    z-index: 1;
     display: block;
     align-items: left;
     padding: 20px;
     text-decoration: none;
-
     border-bottom: 2px solid #aaa7cc50;
-
     inline-size: min-content;
-
     align-content: flex-start;
     justify-content: flex-start;
-
     height: 380px;
-
-
     background-color: rgba(217, 217, 217, 0.5);
     border-radius: 20px;
 
@@ -130,6 +125,7 @@ html {
 
 .result-item .description {
     line-height: 20px;
+    position: relative;
 }
 
 .result-item .description h2 {
@@ -350,4 +346,18 @@ label {
     padding: 10px 15px;
     background-color: grey;
     text-decoration: none;
+}
+
+.bookmark-btn {
+    z-index: 2;
+    float: right;
+    position: absolute;
+    right: 10px; 
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+button.bookmarked {
+    color: yellow;
 }
