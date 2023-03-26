@@ -25,11 +25,9 @@ document.querySelectorAll('.custom-bookmark').forEach(function(bookmarkIcon) {
       if (event.target.classList.contains('bx-bookmark')) {
         event.target.classList.remove('bx-bookmark');
         event.target.classList.add('bx-bookmark-alt');
-        event.target.style.color = 'yellow';
       } else {
         event.target.classList.remove('bx-bookmark-alt');
         event.target.classList.add('bx-bookmark');
-        event.target.style.color = '';
       }
     });
   });

@@ -714,9 +714,14 @@ input[type="submit"] {
     border: none;
 }
 
-.yellow-bookmark {
+.bx-bookmark {
+    color: black;
+}
+
+.bx-bookmark-alt {
     color: yellow;
 }
+
 
 .arrow {
     font-size: 24px;
