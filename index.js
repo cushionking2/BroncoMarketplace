@@ -98,3 +98,6 @@ function setToSell() {
         b_item[i].style.display = "";
      }
 }
+
+
+
