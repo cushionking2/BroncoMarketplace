@@ -100,4 +100,68 @@ function setToSell() {
 }
 
 
+categories = ["appliances", "clothing", "electronics", "furniture"];
 
+function filterAppliances() {
+    var appliances_item = document.getElementsByClassName("appliances");
+    for (var i = 0; i < appliances_item.length; i++) {
+        appliances_item[i].style.display = "";
+    }
+
+    for (var i = 0; i < categories.length; i++) {
+        if(categories[i] != "appliances") {
+            var hide_items = document.getElementsByClassName(categories[i]);
+            for (var j = 0; j < hide_items.length; j++) {
+                hide_items[j].style.display = "none";
+            }
+        }
+    }
+}
+
+function filterClothing() {
+    var clothing_item = document.getElementsByClassName("clothing");
+    for (var i = 0; i < clothing_item.length; i++) {
+        clothing_item[i].style.display = "";
+    }
+
+    for (var i = 0; i < categories.length; i++) {
+        if(categories[i] != "clothing") {
+            var hide_items = document.getElementsByClassName(categories[i]);
+            for (var j = 0; j < hide_items.length; j++) {
+                hide_items[j].style.display = "none";
+            }
+        }
+    }
+}
+
+function filterElectronics() {
+    var electronics_item = document.getElementsByClassName("electronics");
+    for (var i = 0; i < electronics_item.length; i++) {
+        electronics_item[i].style.display = "";
+    }
+
+    for (var i = 0; i < categories.length; i++) {
+        if(categories[i] != "electronics") {
+            var hide_items = document.getElementsByClassName(categories[i]);
+            for (var j = 0; j < hide_items.length; j++) {
+                hide_items[j].style.display = "none";
+            }
+        }
+    }
+}
+
+function filterFurniture() {
+    var furniture_item = document.getElementsByClassName("furniture");
+    for (var i = 0; i < furniture_item.length; i++) {
+        furniture_item[i].style.display = "";
+    }
+
+    for (var i = 0; i < categories.length; i++) {
+        if(categories[i] != "furniture") {
+            var hide_items = document.getElementsByClassName(categories[i]);
+            for (var j = 0; j < hide_items.length; j++) {
+                hide_items[j].style.display = "none";
+            }
+        }
+    }
+}
